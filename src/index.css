@@ -1,13 +1,62 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+	margin: 0;
+	box-sizing: border-box;
+	padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+	height: 100vh;
+	background-color: #110;
+	color: #acf;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.App {
+	font-family: sans-serif;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+h1 {
+	font-size: 24px;
+	margin: 16px;
+}
+
+.video-player {
+	position: relative;
+	width: min(700px, 85vw);
+}
+
+.video-player:hover .thumbnails-preview {
+	visibility: initial;
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.thumbnails-preview {
+	width: min(690px, 85vw);
+	padding: 4px;
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	visibility: hidden;
+	justify-content: flex-start;
+	gap: 12px;
+	overflow-x: auto;
+	white-space: nowrap;
+	background-color: #0004;
+	transform: translateY(40px);
+	opacity: 0;
+	transition: transform 500ms ease-in-out, opacity 500ms ease-in-out,
+		visibility 400ms ease-in-out;
+}
+
+.thumbnail-card {
+	border-radius: 50%;
+	display: inline-block;
 }
