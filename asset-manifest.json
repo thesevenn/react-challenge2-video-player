@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-challenge2-video-player/static/css/main.5c623614.css",
+    "main.js": "/react-challenge2-video-player/static/js/main.5acc3672.js",
+    "index.html": "/react-challenge2-video-player/index.html",
+    "main.5c623614.css.map": "/react-challenge2-video-player/static/css/main.5c623614.css.map",
+    "main.5acc3672.js.map": "/react-challenge2-video-player/static/js/main.5acc3672.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c623614.css",
+    "static/js/main.5acc3672.js"
+  ]
+}
